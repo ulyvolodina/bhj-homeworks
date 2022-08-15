@@ -1,6 +1,6 @@
 let timer = null;
 const countdown = function() {
-	const cycle = document.getElementById('cycle');
+	const cycle = document.getElementById('timer');
 
 	cycle.textContent = cycle.textContent - 1;
 
@@ -10,4 +10,4 @@ const countdown = function() {
 	}
 }
 
-timer = setInterval(countdown, 1000);
+timer = setInterval(countdown, 100);
