@@ -1,13 +1,11 @@
-let timer = null;
 const countdown = function() {
-	const cycle = document.getElementById('timer');
-
-	cycle.textContent = cycle.textContent - 1;
-
-	if (cycle.textContent <= 0) {
-		clearInterval(timer);
+	const timer = document.getElementById('timer');
+	if (timer.textContent > 0) {
+		timer.textContent = timer.textContent - 1;
+	} else {
+		clearInterval(count);
 		alert('Вы победили в конкурсе!');
 	}
 }
 
-timer = setInterval(countdown, 100);
+let count = setInterval(countdown, 1000);
