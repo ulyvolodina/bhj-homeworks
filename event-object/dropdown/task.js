@@ -5,7 +5,7 @@ function menu() {
 	const list = Array.from(document.getElementsByClassName('dropdown__list'));
 	list[0].classList.toggle('dropdown__list_active');
 
-	const links = document.querySelectorAll('dropdown__item');
+	const links = document.querySelectorAll('.dropdown__item');
 
 	links.forEach((link) => {
 		link.onclick = function(event) {
